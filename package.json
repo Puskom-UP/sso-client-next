@@ -1,0 +1,53 @@
+{
+  "name": "@univpahlawan/sso-client-next",
+  "version": "1.0.0",
+  "description": "Klien SSO Universitas Pahlawan (OAuth2 Authorization Code) untuk aplikasi Next.js App Router, dengan dukungan auto-login senyap (prompt=none).",
+  "author": "UPT Komputer & Sistem Informasi, Universitas Pahlawan Tuanku Tambusai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puskom-UP/sso-client-next.git"
+  },
+  "homepage": "https://github.com/Puskom-UP/sso-client-next#readme",
+  "keywords": [
+    "sso",
+    "oauth2",
+    "universitas-pahlawan",
+    "next",
+    "sains"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./next": {
+      "types": "./dist/next.d.ts",
+      "import": "./dist/next.js",
+      "require": "./dist/next.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "next": ">=14"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "next": "^15.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
