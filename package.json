@@ -1,6 +1,6 @@
 {
   "name": "@univpahlawan/sso-client-next",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Klien SSO Universitas Pahlawan (OAuth2 / OIDC) untuk aplikasi Next.js App Router, Pages Router, dan NextAuth.js. Dikelola oleh UPT Komputer & Sistem Informasi UP.",
   "author": "UPT Komputer & Sistem Informasi, Universitas Pahlawan Tuanku Tambusai",
   "license": "MIT",

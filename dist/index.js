@@ -32,7 +32,7 @@ function getSSOConfig(overrideConfig) {
   const clientId = overrideConfig?.clientId || process.env.SSO_CLIENT_ID || process.env.NEXT_PUBLIC_SSO_CLIENT_ID || "";
   const clientSecret = overrideConfig?.clientSecret || process.env.SSO_CLIENT_SECRET || "";
   const redirectUri = overrideConfig?.redirectUri || process.env.SSO_REDIRECT_URI || "";
-  const scope = overrideConfig?.scope || process.env.SSO_SCOPE || "*";
+  const scope = overrideConfig?.scope || process.env.SSO_SCOPE || "";
   const prompt = overrideConfig?.prompt !== void 0 ? overrideConfig.prompt : process.env.SSO_PROMPT ?? "login";
   return {
     ssoUrl,
@@ -75,7 +75,7 @@ var SSOClient = class {
       client_id: this.config.clientId,
       redirect_uri: redirectUri,
       response_type: "code",
-      scope: options?.scope || this.config.scope || "*"
+      scope: options?.scope || this.config.scope || ""
     };
     if (options?.state) {
       queryParams.state = options.state;
